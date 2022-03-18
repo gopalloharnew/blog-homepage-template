@@ -6,10 +6,11 @@
     --body-clr: hsl(200, 15%, 10%);
     --bg-primary: hsl(0, 0%, 100%);
     --accent-clr: hsl(200, 100%, 40%);
-    font-size: 16px;
     --padding-primary: 8px;
     --nav-clr: hsl(200, 15%, 40%);
     --title-clr: hsl(200, 15%, 20%);
+    font-size: 16px;
+    overflow-y: scroll;
 }
 
 *{
