@@ -52,6 +52,12 @@ main{
     --title-clr: hsl(200, 15%, 0%);
 }
 
+.card-description{
+    margin-top: 1rem;
+    line-height: 1.6rem;
+    letter-spacing: 1px;
+}
+
 .read-more{
     color: var(--accent-clr);
     text-decoration: none;
