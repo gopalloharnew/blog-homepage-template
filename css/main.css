@@ -16,7 +16,9 @@ main{
     border: none;
     outline: none;
     border-radius: 4px;
-    box-shadow: 0px 0px 1rem 0.1rem hsla(0, 0%, 50%, 0.100);
+    box-shadow:
+    0 4px 6px -1px rgba(0,0,0,0.1),
+    0 2px 4px -1px rgba(0,0,0,0.06);
 }
 
 .card-wraper{
@@ -29,7 +31,9 @@ main{
     border-radius: 4px;
     padding: 1.5rem;
     margin-top: 2rem;
-    box-shadow: 0px 0px 1rem 0.1rem hsla(0, 0%, 50%, 0.100);
+    box-shadow:
+    0 4px 6px -1px rgba(0,0,0,0.1),
+    0 2px 4px -1px rgba(0,0,0,0.06);
     align-items: flex-start;
 }
 
