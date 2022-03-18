@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/main.css">
 
+    <!-- script -->
+    <script src="js/search.js" defer></script>
+
     <!-- title -->
     <title>Blog</title>
 </head>
@@ -48,17 +51,19 @@
         <div class="card-wraper">
             
             <!-- card -->
-            <div class="card flex column">
+            <template id="cardTemplate">
+                <div class="card flex column">
 
-                <span class="date">12 January 2020</span>
+                    <span class="date">12 January 2020</span>
 
-                <a href="#" class="card-title"><h2>lorem Ispum Dollar Sit Emmet The best Of The Best Chapter In the World</h2></a>
-                
-                <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque recusandae pariatur velit praesentium suscipit! Perferendis iste veniam error et eum quaerat doloribus corporis dicta numquam provident earum quidem, similique eaque.</p>
-                
-                <a href="#" class="read-more">Read More</a>
+                    <h2><a href="#" class="card-title">lorem Ispum Dollar Sit Emmet The best Of The Best Chapter In the World</a></h2>
+                    
+                    <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque recusandae pariatur velit praesentium suscipit! Perferendis iste veniam error et eum quaerat doloribus corporis dicta numquam provident earum quidem, similique eaque.</p>
+                    
+                    <a href="#" class="read-more">Read More</a>
 
-            </div>
+                </div>
+            </template>
         </div>
     </main>
 </body>

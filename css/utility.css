@@ -10,3 +10,7 @@
 .column{
     flex-direction: column;
 }
+
+.hide{
+    display: none;
+}
