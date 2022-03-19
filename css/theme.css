@@ -1,0 +1,87 @@
+.theme-button{
+    height: 40px;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 0px var(--padding-primary);
+}
+
+.theme-arrow{
+    width: 25px;
+    height: 20px;
+    position: relative;
+}
+
+.theme-arrow::after,
+.theme-arrow::before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background-color: var(--body-clr);
+    transition: 0.1s;
+}
+
+.theme-arrow::after{
+    transform: rotate(45deg) translate(-2px, 2px);
+}
+
+.theme-arrow::before{
+    transform: rotate(-45deg) translate(2px, 2px);
+}
+
+.theme-open .theme-arrow::after{
+    transform: rotate(-45deg) translate(-2px, -2px);
+}
+
+.theme-open .theme-arrow::before{
+    transform: rotate(45deg) translate(2px, -2px);
+}
+
+#theme-options{
+    position: fixed;
+    top: 56px;
+    opacity: 0;
+    background-color: var(--bg-secondary);
+    padding: 8px 0px;
+    box-shadow: 0px 4px 6px -1px var(--shadow-bold), 0px 2px 4px -1px var(--shadow-light);
+    transition: 0.1s;
+    pointer-events: none;
+}
+
+.theme-open #theme-options{
+    opacity: 1;
+    top: 64px;
+    pointer-events: all;
+}
+
+
+.theme-option{
+    list-style: circle;
+    height: 30px;
+    padding: 0px 30px;
+    font-weight: 700;
+}
+
+.theme-option:hover{
+    background-color: var(--hover-bg-fade);
+    cursor: pointer;
+}
+
+.theme-option::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    border: 2px solid var(--body-clr);
+    position: absolute;
+    left: 10px; 
+    transition: 0.1s;
+    border-radius: 100%;
+}
+
+[data-current-theme]::before{
+    border-radius: 0px;
+    height: 8px;
+    width: 16px;
+    border-color: transparent transparent var(--body-clr) var(--body-clr);
+    transform: rotate(-45deg) translate(0px, -4px);
+}

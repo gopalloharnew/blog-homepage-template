@@ -1,19 +1,45 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
-:root{
+:root, [data-theme="Light"]{
     color-scheme: light;
     --body-bg: hsl(200, 15%, 95%);
     --body-clr: hsl(200, 15%, 10%);
     --bg-primary: hsl(0, 0%, 100%);
+    --bg-secondary: var(--bg-primary);
     --accent-clr: hsl(200, 100%, 40%);
     --padding-primary: 8px;
     --nav-clr: hsl(200, 15%, 40%);
-    --title-clr: hsl(200, 15%, 20%);
+    --title-clr: hsl(200, 15%, 30%);
+    --hover-bg-fade: hsla(0, 0%, 50%, 0.1);
+    --shadow-bold: hsla(0, 0%, 0%, 0.1);
+    --shadow-light: hsla(0, 0%, 0%, 0.05);
+    --scrollbar-bg: var(--body-bg);
+    --scrollbar-clr: hsl(200, 10%, 60%);
+    --scrollbar-hover: hsl(200, 10%, 50%);
+    --scrollbar-active: hsl(200, 10%, 40%);
     font-size: 16px;
     overflow-y: scroll;
 }
 
-*{
+[data-theme="Dark"]{
+    color-scheme: dark;
+    --body-bg: hsl(200, 15%, 10%);
+    --body-clr: hsl(200, 15%, 100%);
+    --bg-primary: hsl(200, 15%, 14%);
+    --bg-secondary: hsl(200, 15%, 16%);
+    --accent-clr: hsl(200, 100%, 60%);
+    --padding-primary: 8px;
+    --nav-clr: hsl(200, 15%, 70%);
+    --title-clr: hsl(200, 15%, 70%);
+    --hover-bg-fade: hsla(0, 0%, 50%, 0.1);
+    --shadow-bold: hsla(0, 15%, 80%, 0);
+    --shadow-light: hsla(0, 0%, 0%, 0);
+    --theme-border: hsl(200, 15%, 20%);
+}
+
+*,
+*::after,
+*::before{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
