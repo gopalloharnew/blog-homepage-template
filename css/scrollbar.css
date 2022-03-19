@@ -20,7 +20,6 @@
 [data-customized-scrollbar]::-webkit-scrollbar-thumb{
     background-clip: content-box;
     border: 4px solid transparent;
-    border-radius: 8px;
     background-color: var(--scrollbar-clr);
 }
 

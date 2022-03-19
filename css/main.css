@@ -19,6 +19,7 @@ main{
     background-color: var(--bg-primary);
     border-radius: 4px;
     box-shadow: 0px 0px 1rem 0.1rem var(--shadow-light);
+    font-family: 'Open Sans', sans-serif;
 }
 
 #search:focus{
